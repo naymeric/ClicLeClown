@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click le Clown</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+ <!-- **************************HEADER************************ -->
+
+    <header>
+
+        <h1>CLICK LE CLOWN</h1>
+
+
+        <div id="boutonContainer">
+
+            <button id="rejouer" type="button">Rejouer</button>
+
+            
+            <div id="difficulteContainer">
+                <button id="difficulte" type="button">Difficulte</button>
+                <ul id="niveauContainer">
+                    <li id="facile">Facile</li>
+                    <li id="normale">Normale</li>
+                    <li id="difficile">Difficile</li>
+                </ul>
+
+
+            </div>
+<div id="volumeContainer">
+            <button id="volume" type="button">Volume</button>
+            <ul id="niveauVolumeContainer">
+                <li id="moins">Moins</li>
+                <li id="plus">Plus</li>
+            </ul>
+        </div>
+
+            <button id="quitter" type="button">Quitter</button>
+        </div>
+    </header>
+
+
+    <!-- **************************MAIN************************* -->
+    <main>
+
+        <img id="clownPict" src="./assets/images/clown.png" alt="">
+
+        <button id="commencer" type="button">Commencer</button>
+
+        <div id="final" ></div>
+
+    </main>
+
+
+
+  <!-- **************************FOOTER************************* -->
+
+    <footer>
+        <audio  volume="0.5" type ="audio/wav" id="rire" src="./assets/son/rire.wav"></audio>
+
+        <div id="scoreContainer" ></div>
+
+    </footer>
+
+
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>

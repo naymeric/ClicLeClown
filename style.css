@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "BloodyScary";
+    src: url(./assets/font/BloodyScary.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    /* box-sizing: border-box; */
+    background-color: #0A0302;
+    font-family: "BloodyScary";
+    letter-spacing: 2px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+ /******************************************************* HEADER ************************************************************/
+
+header {
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+h1 {
+    display: block;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 20px;
+    text-shadow:  -1px 10px 0px #f11414f5;
+}
+
+#boutonContainer {
+ 
+    color: white;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+#boutonContainer button {
+    color: white;
+    position: relative;
+    font-size: large;
+    padding: 10px;
+    border: 50px;
+    box-shadow: -3px 0px 0px 0px #c5125dc9;
+    border-radius: 40px;
+    text-shadow:  1px 5px 1px #f11414b0;
+}
+
+#boutonContainer button:hover {
+    background-color: rgba(194, 138, 138, 0.521);
+}
+
+
+/*****************************Bouton difficulte**********************************************/
+
+ #niveauContainer {
+    display: none;
+    list-style-type: none;
+    font-size:medium;
+    position: absolute;
+    background: white;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    margin-top: 5px;
+    margin-left: 10px;
+    z-index: 1;
+}
+
+#niveauContainer li {
+padding-left: 10px;
+}
+
+#niveauContainer li:hover {
+    background-color: rgba(163, 69, 69, 0.815);
+    }
+
+#difficulteContainer:hover #niveauContainer{
+    display: block;
+}
+
+
+/*****************************Bouton volume**********************************************/
+
+#niveauVolumeContainer {
+    display: none;
+    list-style-type: none;
+    font-size:medium;
+    position: absolute;
+    background: white;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    margin-top: 5px;
+    margin-left: 10px;
+    z-index: 1;
+}
+
+#niveauVolumeContainer li {
+    padding-left: 10px;
+    }
+
+    #niveauVolumeContainer li:hover {
+        background-color: rgba(163, 69, 69, 0.815);
+        }
+
+        #volumeContainer:hover #niveauVolumeContainer{
+            display: block;
+        }
+
+
+ /******************************************************* MAIN ************************************************************/
+
+ main {
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+}
+
+#commencer {
+    display: block;
+    color: white;
+    font-size: xx-large;
+    text-shadow:  -1px 10px 0px #f11414f5;
+    letter-spacing: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: -3px 0px 0px 0px #c5125dc9;
+    border: none;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+    #clownPict {
+        position: absolute;
+        transition: all 1s ease;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    } 
+
+#final {
+    display: none;
+    position: absolute;
+    transform: translateX(-50%);
+    color: white;
+    top: 50%;
+    left: 50%;
+    font-size: xx-large;
+    text-shadow:  1px 5px 0px #f11414f5;
+}
+
+
+    /******************************************************* FOOTER ************************************************************/
+
+    #scoreContainer {
+        color: white;
+        font-size: xx-large;
+        padding-left: 20px;
+    }
